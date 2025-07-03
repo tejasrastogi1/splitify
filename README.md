@@ -1,6 +1,7 @@
 # Splitify - Expense Sharing Application
 
 A minimalist web application to share expenses with friends and family. This is a customized version with English and Hindi language support, featuring a clean, unbranded interface.
+Vercel Deployed : https://splitify-bay.vercel.app/
 
 ## 🌟 Features
 
