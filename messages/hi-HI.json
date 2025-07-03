@@ -1,7 +1,7 @@
 {
   "Homepage": {
     "title": "<strong>खर्च</strong> को <strong>दोस्तों और परिवार</strong> के साथ साझा करें",
-    "description": "आपके नए <strong>Spliit</strong> इंस्टेंस में आपका स्वागत है!",
+    "description": "आपके नए <strong>Splitify</strong> इंस्टेंस में आपका स्वागत है!",
     "button": {
       "groups": "समूहों में जाएँ"
     }
@@ -393,5 +393,28 @@
       "TV/Phone/Internet": "टीवी/फोन/इंटरनेट",
       "Water": "पानी"
     }
+  },
+  "UPIPayment": {
+    "title": "UPI से भुगतान करें",
+    "amount": "राशि",
+    "from": "भेजने वाला",
+    "to": "पाने वाला",
+    "upiIdLabel": "प्राप्तकर्ता का UPI ID",
+    "upiIdPlaceholder": "जैसे: name@paytm, 9876543210@ybl",
+    "upiIdHelp": "जिसे आप भुगतान करना चाहते हैं उसका UPI ID दर्ज करें",
+    "payNow": "अभी भुगतान करें",
+    "howItWorks": "यह कैसे काम करता है:",
+    "step1": "प्राप्तकर्ता का UPI ID दर्ज करें",
+    "step2": "अपना UPI ऐप खोलने के लिए \"अभी भुगतान करें\" पर क्लिक करें",
+    "step3": "अपने UPI ऐप में भुगतान पूरा करें",
+    "step4": "वापस आकर खर्च को भुगतान के रूप में चिह्नित करें",
+    "paymentInitiated": "भुगतान शुरू किया गया",
+    "paymentInitiatedDesc": "अपने UPI ऐप में भुगतान पूरा करें",
+    "linkCopied": "लिंक कॉपी किया गया",
+    "linkCopiedDesc": "UPI भुगतान लिंक क्लिपबोर्ड पर कॉपी किया गया",
+    "upiIdRequired": "UPI ID आवश्यक है",
+    "upiIdRequiredDesc": "कृपया प्राप्तकर्ता का UPI ID दर्ज करें",
+    "error": "त्रुटि",
+    "errorDesc": "UPI ऐप खोलने में असमर्थ। कृपया फिर से प्रयास करें।"
   }
 }

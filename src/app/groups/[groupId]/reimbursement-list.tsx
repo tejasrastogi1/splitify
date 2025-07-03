@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { UPIPayment } from '@/components/upi-payment'
 import { Reimbursement } from '@/lib/balances'
 import { formatCurrency } from '@/lib/utils'
 import { Participant } from '@prisma/client'
@@ -37,15 +38,29 @@ export function ReimbursementList({
                 strong: (chunks) => <strong>{chunks}</strong>,
               })}
             </div>
-            <Button variant="link" asChild className="-mx-4 -my-3">
-              <Link
-                href={`/groups/${groupId}/expenses/create?reimbursement=yes&from=${reimbursement.from}&to=${reimbursement.to}&amount=${reimbursement.amount}`}
+            <div className="flex gap-2 flex-wrap">
+              <UPIPayment
+                amount={reimbursement.amount}
+                currency={currency}
+                payerName={getParticipant(reimbursement.from)?.name || 'Unknown'}
+                payeeName={getParticipant(reimbursement.to)?.name || 'Unknown'}
+                note={`Payment from ${getParticipant(reimbursement.from)?.name} to ${getParticipant(reimbursement.to)?.name}`}
               >
-                {t('markAsPaid')}
-              </Link>
-            </Button>
+                <Button variant="outline" size="sm" className="gap-2">
+                  <span className="text-sm">💳</span>
+                  Pay UPI
+                </Button>
+              </UPIPayment>
+              <Button variant="link" asChild className="-mx-4 -my-3">
+                <Link
+                  href={`/groups/${groupId}/expenses/create?reimbursement=yes&from=${reimbursement.from}&to=${reimbursement.to}&amount=${reimbursement.amount}`}
+                >
+                  {t('markAsPaid')}
+                </Link>
+              </Button>
+            </div>
           </div>
-          <div>{formatCurrency(currency, reimbursement.amount, locale)}</div>
+          <div className="font-medium">{formatCurrency(currency, reimbursement.amount, locale)}</div>
         </div>
       ))}
     </div>

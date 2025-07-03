@@ -1,7 +1,7 @@
 {
   "Homepage": {
     "title": "Share <strong>Expenses</strong> with <strong>Friends & Family</strong>",
-    "description": "Welcome to your new <strong>Spliit</strong> instance !",
+    "description": "Welcome to your new <strong>Splitify</strong> instance !",
     "button": {
       "groups": "Go to groups"
     }
@@ -393,5 +393,28 @@
       "TV/Phone/Internet": "TV/Phone/Internet",
       "Water": "Water"
     }
+  },
+  "UPIPayment": {
+    "title": "Pay via UPI",
+    "amount": "Amount",
+    "from": "From",
+    "to": "To",
+    "upiIdLabel": "Payee's UPI ID",
+    "upiIdPlaceholder": "e.g., name@paytm, 9876543210@ybl",
+    "upiIdHelp": "Enter the UPI ID of the person you want to pay",
+    "payNow": "Pay Now",
+    "howItWorks": "How it works:",
+    "step1": "Enter the payee's UPI ID",
+    "step2": "Click \"Pay Now\" to open your UPI app",
+    "step3": "Complete the payment in your UPI app",
+    "step4": "Come back and mark the expense as paid",
+    "paymentInitiated": "Payment Initiated",
+    "paymentInitiatedDesc": "Complete the payment in your UPI app",
+    "linkCopied": "Link Copied",
+    "linkCopiedDesc": "UPI payment link copied to clipboard",
+    "upiIdRequired": "UPI ID Required",
+    "upiIdRequiredDesc": "Please enter the payee's UPI ID",
+    "error": "Error",
+    "errorDesc": "Unable to open UPI app. Please try again."
   }
 }
